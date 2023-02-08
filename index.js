@@ -12,7 +12,7 @@ const secret = "ViShWa1998"
 app.use(express.json())
 
 app.use(cors({
-    origin: "htt"
+    origin: "*"
 }));
 
 app.post('/users', async (req, res) => {
