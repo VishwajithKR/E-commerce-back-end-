@@ -12,7 +12,7 @@ const secret = "ViShWa1998"
 app.use(express.json())
 
 app.use(cors({
-    origin: "http://localhost:3000"
+    origin: "htt"
 }));
 
 app.post('/users', async (req, res) => {
@@ -122,7 +122,7 @@ app.put('/changepassword', async (req, res) => {
     } else {
         res.json({ message: "no user is found" })
     }
-    let close = await connection.close()
+    let close = await connection.close();
 })
 
 
