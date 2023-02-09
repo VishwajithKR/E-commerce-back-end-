@@ -12,7 +12,7 @@ const secret = "ViShWa1998"
 app.use(express.json())
 
 app.use(cors({
-    origin: "https://ecommerce-csek.onrender.com"
+    origin: ("https://ecommerce-csek.onrender.com","*")
 }));
 
 app.post('/users', async (req, res) => {
